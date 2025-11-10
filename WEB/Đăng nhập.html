@@ -1,0 +1,68 @@
+<!DOCTYPE html>  
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập - Blue Devil</title> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/dangnhap.css">
+</head>
+
+<body>
+  <div class="khung">
+    <h2>ĐĂNG NHẬP</h2>
+
+    <form>
+      <!-- Ô Tên đăng nhập -->
+      <div class="input-container">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" name="username" placeholder="Tên đăng nhập" required>
+      </div>
+
+      <!-- Ô Mật khẩu -->
+      <div class="input-container">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" name="password" placeholder="Mật khẩu" required>
+      </div>
+
+      <div class="qmkvanhacnhotoi">
+        <label class="remember-label">
+          <input type="checkbox" name="remember">Remind me
+        </label>
+        <a href="#" class="forgot">Quên mật khẩu ?</a>
+      </div>
+
+      <input type="submit" value="Đăng nhập" class="login-btn">
+
+      <!-- Nút Trở về trang chủ -->
+      <a href="trangchu.html" class="back-home-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+        Trở về trang chủ
+      </a>
+      
+      <p class="hoac">Hoặc</p>
+
+      <div class="google-facebook">
+        <button type="button" class="fb">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+          Đăng nhập bằng Facebook
+        </button>
+
+        <button type="button" class="gg">
+          <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google">
+          Đăng nhập bằng Google
+        </button>
+      </div>
+    </form>
+
+    <div class="khuyen-mai">
+      <p>💪 Mua sắm dễ dàng hơn khi đăng nhập!</p>
+      <p>Đăng nhập để nhận <span>ưu đãi riêng cho fan bóng đá ⚽</span></p>
+    </div>
+
+    <p class="register-link">
+      Chưa có tài khoản? <a href="Đăng kí.html">Đăng ký ngay</a>
+    </p>
+  </div>
+</body>
+</html>

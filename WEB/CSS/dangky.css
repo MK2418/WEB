@@ -1,0 +1,278 @@
+/* === RESET & BASE STYLES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../image/anhtrang.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 0;
+}
+
+/* === REGISTER CONTAINER === */
+.khung {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 40px 30px;
+  border: 2px solid rgb(1, 1, 6);
+  border-radius: 15px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(15, 118, 215, 0.851);
+}
+
+/* === HEADING === */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000104;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* === INPUT CONTAINERS === */
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(248, 248, 248, 0.973);
+  border: 2px solid rgb(22, 3, 3);
+  border-radius: 8px;
+  padding: 12px 15px;
+  width: 100%;
+  margin: 0 auto 15px auto;
+  box-sizing: border-box;
+}
+
+.input-container i {
+  margin-right: 12px;
+  color: #00040a;
+  font-size: 16px;
+  width: 20px;
+}
+
+.input-container input,
+.input-container select {
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%;
+  font-size: 15px;
+  color: #333;
+}
+
+.input-container input::placeholder,
+.input-container select {
+  color: #666;
+}
+
+.input-container select {
+  cursor: pointer;
+}
+
+/* === BUTTONS === */
+.register-btn {
+  background: #0d4ca4;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background 0.3s;
+}
+
+.register-btn:hover {
+  background: #0b3d8a;
+}
+
+.back-home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #f8f9fa;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid #ddd;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+.back-home-btn:hover {
+  background: #e9ecef;
+  border-color: #0d4ca4;
+  color: #0d4ca4;
+}
+
+/* === SEPARATOR === */
+.hoac {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 600;
+  color: #010307;
+  position: relative;
+}
+
+.hoac::before,
+.hoac::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+}
+
+.hoac::before {
+  left: 0;
+}
+
+.hoac::after {
+  right: 0;
+}
+
+/* === SOCIAL LOGIN BUTTONS === */
+.google-facebook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.google-facebook button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.google-facebook button img {
+  width: 20px;
+  height: 20px;
+}
+
+.google-facebook .fb {
+  background-color: #3b5998;
+  color: white;
+}
+
+.google-facebook .fb:hover {
+  background-color: #344e86;
+}
+
+.google-facebook .gg {
+  background-color: white;
+  color: #555;
+  border: 2px solid #ddd;
+}
+
+.google-facebook .gg:hover {
+  background-color: #f8f9fa;
+  border-color: #0d4ca4;
+}
+
+/* === PROMOTION SECTION === */
+.khuyen-mai {
+  margin: 25px 0;
+  text-align: center;
+  color: #081f4d;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.khuyen-mai p {
+  margin-bottom: 8px;
+}
+
+.khuyen-mai span {
+  color: #ff0000;
+  font-weight: 700;
+}
+
+/* === LOGIN LINK === */
+.lienket {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.lienket a {
+  color: #0d4ca4;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.lienket a:hover {
+  text-decoration: underline;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 480px) {
+  .khung {
+    width: 90%;
+    padding: 30px 20px;
+    margin: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  .input-container {
+    padding: 10px 12px;
+  }
+  
+  .google-facebook button {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .khung {
+    padding: 25px 15px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  .input-container {
+    padding: 8px 10px;
+  }
+  
+  .register-btn,
+  .back-home-btn {
+    padding: 10px;
+  }
+}
