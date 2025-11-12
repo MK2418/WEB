@@ -1,0 +1,76 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập - Blue Devil</title> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/dangnhap.css">
+</head>
+
+<body>
+  <div class="khung">
+    <h2>ĐĂNG NHẬP</h2>
+
+    <!-- Sử dụng form với action -->
+    <form action="trangchudalogin.html" method="GET">
+      <!-- Ô Tên đăng nhập -->
+      <div class="input-container">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" name="username" placeholder="Tên đăng nhập" required 
+               pattern=".{3,}" title="Tên đăng nhập phải có ít nhất 3 ký tự">
+      </div>
+
+      <!-- Ô Mật khẩu -->
+      <div class="input-container">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" name="password" placeholder="Mật khẩu" required
+               pattern=".{6,}" title="Mật khẩu phải có ít nhất 6 ký tự">
+      </div>
+
+      <div class="qmkvanhacnhotoi">
+        <label class="remember-label">
+          <input type="checkbox" name="remember">Remind me
+        </label>
+        <a href="#" class="forgot">Quên mật khẩu ?</a>
+      </div>
+
+      <!-- Nút Đăng nhập dạng submit -->
+      <button type="submit" class="login-btn">
+        Đăng nhập
+      </button>
+    </form>
+
+    <!-- Nút Trở về trang chủ -->
+    <a href="trangchu.html" class="back-home-btn">
+      <i class="fa-solid fa-arrow-left"></i>
+      Trở về trang chủ
+    </a>
+    
+    <p class="hoac">Hoặc đăng nhập nhanh</p>
+
+    <div class="google-facebook">
+      <!-- Nút Facebook với link trực tiếp -->
+      <a href="trangchudalogin.html?source=facebook" class="fb">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        Đăng nhập bằng Facebook
+      </a>
+
+      <!-- Nút Google với link trực tiếp -->
+      <a href="trangchudalogin.html?source=google" class="gg">
+        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google">
+        Đăng nhập bằng Google
+      </a>
+    </div>
+
+    <div class="khuyen-mai">
+      <p>💪 Mua sắm dễ dàng hơn khi đăng nhập!</p>
+      <p>Đăng nhập để nhận <span>ưu đãi riêng cho fan bóng đá ⚽</span></p>
+    </div>
+
+    <p class="register-link">
+      Chưa có tài khoản? <a href="Đăng kí.html">Đăng ký ngay</a>
+    </p>
+  </div>
+</body>
+</html>
